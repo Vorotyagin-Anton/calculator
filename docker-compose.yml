@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  php-tc:
+    container_name: php-tc
+    build:
+      context: .
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./app:/var/www/travelers_club/app
